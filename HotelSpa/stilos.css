@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+a{
+    color:white;
+    font-weight: bold;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: white;
+    font-size: 16px;
+    margin: 0 auto;
+    font-family: 'Gideon Roman', cursive;
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    padding: .6rem;
+    background-color: black;
+    color:white;
+    justify-content: start;
+    align-items: center;
+}
+
+header a{
+    margin: .6rem;
+}
+
+header a:hover{
+    width: 90%;
+    background-color:grey;
+    color: black;
+    text-align: center;
+    border-radius: 8px  ;
+    
+}
+
+.primario{
+display: flex;
+flex-direction: column;
+margin: .8rem; 
+
+}
+.primario__img{
+    position: relative;
+    
+}
+
+section h1{
+    margin: 0 ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.8rem;
+    color:white;
+    font-weight: bolder;
+    text-shadow: 4px 4px 3px black;
+    
+}
+
+.primario__titulos{
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px rgb(124, 123, 123);
+}
+
+
+.secundario {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(4, 1fr);
+    color: white;
+    gap: 1.3rem;
+    margin-top: 1rem;
+    margin: 1rem;
+    
+}
+.secundario__iconos {
+    background-color:rgb(85, 45, 230) ;
+    padding: 1.5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color:white;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+footer a:hover{
+    background-color: grey;
+    border-radius:8px;
+    color: black;
+}
+@media (min-width: 576px){
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header a:hover{
+        width: 15%;
+    }
+    .secundario{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+}
+@media (min-width: 768px) {
+    header{
+        justify-content: space-evenly;
+        margin-bottom: 1rem;
+    }
+    .primario__img{
+        margin-bottom: 1rem;
+    }
+
+   .contenedor{
+    display: flex;
+    flex-direction: row;
+     gap: 2rem; 
+     margin: 0 1rem;
+    
+   }
+   .primario__img4{
+    display: none;
+   }
+
+   .secundario{
+    display: flex;
+    flex-direction: row;
+   }
+
+
+}    
+
+
